@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Main {
+public class SingleThreadedServer {
     public static void main(String[] args) {
         try(ServerSocket serverSocket = new ServerSocket(5000)){
             try(Socket socket = serverSocket.accept()) {
